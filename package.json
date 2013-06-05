@@ -3,7 +3,8 @@
 	"version" : "0.0.1",
 	"dependencies" : {
 		"express" : "latest",
-		"socket.io": "latest"
+		"socket.io": "latest",
+		"jade": "latest"
 	},
 	"engines" : {
 		"node" : "0.10.x",
