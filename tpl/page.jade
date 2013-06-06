@@ -1,14 +1,33 @@
 !!!
 html
-    head
-        title= "Real time web chat"
-    	script(src='/chat.js')
-    	script(src='/socket.io/socket.io.js')
-    body
-        #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
-        .controls
-    		| Name:
-    		input#name(style='width:350px;')
-    		br
-    		input#field(style='width:350px;')
-    		input#send(type='button', value='send')
+	head
+		title= "BellyChat"
+		script(src='/chat.js')
+		script(src='/socket.io/socket.io.js')
+		include bootstrap.min.css
+		include style.css
+	body
+
+		.container
+			.row
+				.span9
+					h1
+						| BellyChat
+			.row
+				#chatlist.span3
+					ul.nav.nav-pills.nav-stacked
+						li
+							a(href="#")
+								i.icon-user
+								| person1
+						li
+							a(href="#")
+								i.icon-user
+								| person2
+				#chatbox.span6
+					#content.well
+					#messageinput
+						form#messageform.form-inline
+							input#name.input-small
+							input#field.input-xlarge
+							input#send.btn(type="button", value="send")
