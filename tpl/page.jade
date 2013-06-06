@@ -14,20 +14,10 @@ html
 					h1
 						| BellyChat
 			.row
-				#chatlist.span3
-					ul.nav.nav-pills.nav-stacked
-						li
-							a(href="#")
-								i.icon-user
-								| person1
-						li
-							a(href="#")
-								i.icon-user
-								| person2
-				#chatbox.span6
+				#chatbox.span9
 					#content.well
 					#messageinput
 						form#messageform.form-inline
-							input#name.input-small
-							input#field.input-xlarge
+							input#name.input-small(type="text")
+							input#field.input-xlarge(type="text")
 							input#send.btn(type="button", value="send")
