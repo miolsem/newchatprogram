@@ -4,7 +4,7 @@
 	"dependencies" : {
 		"express" : "2.5.11",
 		"socket.io": "0.9.13",
-		"jade": "0.31.x"
+		"jade": "*"
 	},
 	"engines" : {
 		"node" : "0.10.x",
