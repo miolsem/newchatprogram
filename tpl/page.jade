@@ -4,6 +4,7 @@ html
 		title= "BellyChat"
 		script(src='/chat.js')
 		script(src='/socket.io/socket.io.js')
+		script(src='/jquery.js')
 		include bootstrap.min.css
 		include style.css
 	body
@@ -18,6 +19,7 @@ html
 					#content.well
 					#messageinput
 						form#messageform.form-inline
-							input#name.input-small(type="text")
-							input#field.input-xlarge(type="text")
-							input#send.btn(type="button", value="send")
+							input#name.span2(type="text")
+							input#field.span6(type="text")
+							input#send.btn.pull-right(type="button", value="send")
+		script(src='/enter.js')

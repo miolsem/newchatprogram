@@ -22,7 +22,7 @@ window.onload = function() {
         }
     });
  
-    sendButton.onclick = function() {
+    sendButton.onclick = sendMessage = function() {
         if(name.value == "") {
             alert("Please type your name!");
         } else {
@@ -31,5 +31,9 @@ window.onload = function() {
 	    field.value = "";
         }
     };
- 
+
+    
+
+
 }
+ 
